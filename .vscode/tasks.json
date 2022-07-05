@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "mkdir -p build && cd build && cmake -Wno-dev -DLIBNFC_DEBUG_MODE=ON -DLIBNFC_LOG=ON .. && make -j$(nproc)",
+            "command": "mkdir -p build && cd build && cmake -Wno-dev -DLIBNFC_DEBUG_MODE=ON -DLIBNFC_LOG=ON .. && VERBOSE=1 make -j$(nproc)",
             "options": {
                 "cwd": "${workspaceFolder}"
             },

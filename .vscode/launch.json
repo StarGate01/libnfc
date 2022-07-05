@@ -10,9 +10,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/build/utils/nfc-list",
             "args": [],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build/utils",
-            "environment": [],
+            "environment": [ { "name": "LIBNFC_DEVICE", "value": "pn71xx:" } ],
             "externalConsole": false,
             "MIMode": "gdb",
             "setupCommands": [
