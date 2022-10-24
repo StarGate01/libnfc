@@ -913,6 +913,7 @@ static int pcsc_device_set_property_bool(struct nfc_device *pnd, const nfc_prope
   (void) pnd;
   switch (property) {
     case NP_INFINITE_SELECT:
+    case NP_ACTIVATE_CRYPTO1:
       // ignore
       return NFC_SUCCESS;
     case NP_AUTO_ISO14443_4:
